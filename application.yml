@@ -2,15 +2,14 @@ server :
   port : 8888
 
 spring:
-  application:
-    name: configuration-server
-  cloud :
-    server :
-      git :
-        uri : git@github.com-work:manikrish-tech/fc-config-server.git
-        default-label : main
-        ignore-local-ssh-settings : true
-        private-key : ${SSH_PRIVATE_KEY:}
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com-work/manikrish-tech/fc-config-server.git
+          default-label: main
+          username: ${GIT_USERNAME}
+          password: ${GIT_PAT}
         search-paths : '{application}'
         clone-on-start : true
 
