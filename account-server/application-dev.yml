@@ -1,0 +1,23 @@
+# Service-specific development configuration
+server:
+  port: 8081  # This will be different for each service
+
+spring:
+  application:
+    name: account-server
+  # For future use with PostgreSQL
+  datasource:
+    url: jdbc:postgresql://localhost:5432/service_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+# Eureka client configuration
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
