@@ -6,7 +6,7 @@ spring:
   application:
     name: account-server
   datasource:
-    url: jdbc:postgresql://localhost:5432/service_db
+    url: jdbc:postgresql://localhost:5432/fcdb
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
