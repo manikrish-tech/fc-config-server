@@ -6,7 +6,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com-work/manikrish-tech/fc-config-server.git
+          uri: https://github.com/manikrish-tech/fc-config-server.git
           default-label: main
           username: ${GIT_USERNAME}
           password: ${GIT_PAT}
