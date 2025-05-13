@@ -1,0 +1,15 @@
+server:
+  port: 8761  # Same as dev, assuming each environment is isolated
+
+spring:
+  application:
+    name: service-registry
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://peer1.eureka.prod.internal:8761/eureka/,http://peer2.eureka.prod.internal:8761/eureka/
+
+# Optional: add security, rate limiting, or clustering config

@@ -1,0 +1,22 @@
+server :
+  port : 8005
+
+spring:
+  application:
+    name : notification-sever
+
+datasource :
+  url : jdbc:postgres://prod-db-host:5434/notify_prod_db
+  username : prod_user
+  password : prod_password
+  driver-class-name : org.postgresql.Driver
+
+jpa:
+  hibernate :
+    ddl-auto : none
+    show-sql : false
+
+eureka :
+  client :
+    service-url :
+      defaultZone : http://eureka.prod-cluster.internal:8761/eureka/
