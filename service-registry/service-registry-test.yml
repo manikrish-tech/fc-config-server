@@ -1,0 +1,11 @@
+server:
+  port: 8762  # Different port for test environment
+
+spring:
+  application:
+    name: service-registry
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
