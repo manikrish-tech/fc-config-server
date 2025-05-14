@@ -28,4 +28,4 @@ eureka :
           end-points:
             web:
               exposure:
-                include: *
+                include: health,info,metrics,loggers,env
