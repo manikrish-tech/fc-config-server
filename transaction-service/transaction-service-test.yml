@@ -1,6 +1,6 @@
 # Service-specific test configuration for transaction service
 server:
-  port: 8009  # Different from dev and prod
+  port: 8018  # Different from dev and prod
 
 spring:
   application:

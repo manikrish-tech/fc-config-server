@@ -1,6 +1,6 @@
 # Service-specific development configuration for transaction-service
 server:
-  port: 8007  # This will be different for each service
+  port: 8016  # This will be different for each service
 
 spring:
   application:

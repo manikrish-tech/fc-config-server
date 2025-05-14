@@ -1,6 +1,6 @@
 # Service-specific test configuration
 server:
-  port: 8002  # Different from dev and prod
+  port: 8012  # Different from dev and prod
 
 spring:
   application:

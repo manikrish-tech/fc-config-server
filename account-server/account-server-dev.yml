@@ -1,6 +1,6 @@
 # Service-specific development configuration
 server:
-  port: 8081  # This will be different for each service
+  port: 8010  # This will be different for each service
 
 spring:
   application:

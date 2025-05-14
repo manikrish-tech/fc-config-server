@@ -1,6 +1,6 @@
 # Service-specific production configuration
 server:
-  port: 8003  # Set the appropriate production port
+  port: 8011  # Set the appropriate production port
 
 spring:
   application:
