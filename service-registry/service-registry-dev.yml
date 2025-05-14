@@ -5,5 +5,5 @@ eureka:
   instance:
     hostname: service-registry
   client:
-    register-with-eureka: true
-    fetch-registry: true
+    register-with-eureka: false
+    fetch-registry: false
