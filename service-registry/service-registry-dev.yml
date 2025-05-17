@@ -8,11 +8,11 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
 
-management :
-  endpoint :
-    health :
-      show-details : always
-    end-points :
-      web :
-        exposure :
-          include  : health,info,metrics,loggers,env
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,loggers,env
