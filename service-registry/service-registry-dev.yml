@@ -9,10 +9,10 @@ eureka:
     fetch-registry: false
 
 management:
-  endpoint:
-    health:
-      show-details: always
   endpoints:
     web:
       exposure:
-        include: health,info,metrics,loggers,env
+        include: health,info,metrics,loggers,env,refresh
+  endpoint:
+    health:
+      show-details: always
